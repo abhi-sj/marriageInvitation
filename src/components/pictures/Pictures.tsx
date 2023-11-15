@@ -1,7 +1,6 @@
 import React from "react";
 import "./pictures.css";
 import Gallery from "react-image-gallery";
-import LazyLoad from "react-lazyload";
 import "react-image-gallery/styles/css/image-gallery.css";
 declare var require: any;
 
@@ -31,15 +30,13 @@ const Pictures = () => {
         </h1>
       </div>
       <div>
-        <LazyLoad height={200} offset={100}>
-          <Gallery
-            items={generateImages}
-            lazyLoad
-            showFullscreenButton={false}
-            showThumbnails={false}
-            showPlayButton={false}
-          />
-        </LazyLoad>
+        <Gallery
+          items={generateImages}
+          lazyLoad
+          showFullscreenButton={false}
+          showThumbnails={false}
+          showPlayButton={false}
+        />
       </div>
     </section>
   );
