@@ -3,7 +3,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <header className="bg_theme">
+    <header className="bg_theme" id="header">
       <div className="container header__container">
         <h1 style={{ color: "#333" }}>Abhijith & Ragna</h1>
         <div className="specialFont" style={{ color: "#333" }}>
