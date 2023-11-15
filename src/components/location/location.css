@@ -1,0 +1,162 @@
+.experience__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.locationIcons {
+  color: "#333";
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+}
+.experience__container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.experience__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.location_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.location_cards_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapCard {
+  width: 500px;
+  height: 400px;
+}
+
+.location_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fcc2d7;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.card_occasion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: "Titillium Web, sans-serif";
+  margin-bottom: 2rem;
+}
+
+.card_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card_entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: #fcc2d7;
+  border: 2px solid #fcc2d7;
+  border-radius: 10px;
+}
+
+.section__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  font-family: "Titillium Web, sans-serif";
+}
+
+.title_location {
+  font-family: "Titillium Web, sans-serif";
+}
+.experience__container > div h3 {
+  text-align: center;
+  color: var(--color-primary);
+}
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+/********** MEDIA QUERIES (Medium Devices) *********/
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+/********** MEDIA QUERIES (Medium Devices) *********/
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+  .experience__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .location_cards_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .location_card {
+    width: 90%;
+  }
+  .mapCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+  }
+}
