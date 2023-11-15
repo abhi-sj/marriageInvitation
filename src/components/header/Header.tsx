@@ -4,8 +4,12 @@ import "./header.css";
 const Header = () => {
   return (
     <header className="bg_theme" id="header">
-      <div className="container header__container">
-        <h1 style={{ color: "#333" }}>Abhijith & Ragna</h1>
+      <div className="header__container">
+        <div className="the_couples">
+          <h1 style={{ color: "#333" }}>Abhijith </h1>
+          <h3 style={{ color: "#333" }}> & </h3>
+          <h1 style={{ color: "#333" }}>Ragna</h1>
+        </div>
         <div className="specialFont" style={{ color: "#333" }}>
           WE ARE GETTING MARRIED!
         </div>

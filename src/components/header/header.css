@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 6rem;
   overflow: hidden;
 }
 
@@ -11,6 +11,13 @@ header {
 }
 .specialFont {
   font-family: "Titillium Web", sans-serif;
+}
+
+.the_couples {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .specialFont_date {
@@ -89,5 +96,11 @@ header {
   .header__socials,
   .scroll_down {
     display: none;
+  }
+  .the_couples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
